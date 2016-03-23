@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>移入变大移出变小2</title>
+	<style type="text/css">
+	#box{width:200px;height:200px;background:#399;border:#ccc 1px solid;}
+	</style>
+	<script type="text/javascript">
+	function toShow(){
+		document.getElementById('box').style.width = '400px';
+		document.getElementById('box').style.height = '400px';
+		document.getElementById('box').style.background = 'red';
+	}
+	</script>
+</head>
+<body>
+	<div id="box" onmouseover="toShow()" onmouseout="document.getElementById('box').style.width='200px';document.getElementById('box').style.height='200px';document.getElementById('box').style.background='#399'"></div>
+</body>
+</html>

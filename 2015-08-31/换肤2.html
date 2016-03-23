@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>换肤2</title>
+	<link rel="stylesheet" id="link" type="text/css" href="css/skin1.css">
+	<style type="text/css">
+	div{width:200px;height:200px;margin:10px;border:#ccc 1px solid;}
+	</style>
+	<script type="text/javascript">
+		function skin1(){
+			var oLink = document.getElementById('link');
+			oLink.href = 'css/skin1.css';
+		}
+		function skin2(){
+			var oLink = document.getElementById('link');
+			oLink.href = 'css/skin2.css';
+		}
+		function skin3(){
+			var oLink = document.getElementById('link');
+			oLink.href = 'css/skin3.css';
+		}
+	</script>
+</head>
+<body>
+	<input type="button" value="skin1" onclick="skin1()">
+	<input type="button" value="skin2" onclick="skin2()">
+	<input type="button" value="skin3" onclick="skin3()">
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+</body>
+</html>
