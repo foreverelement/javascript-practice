@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>获取样式</title>
+
+	<script type="text/javascript">
+	function getStyle(){
+		var oBox = document.getElementById('box');
+		alert(oBox.style.width);
+	}		
+	</script>
+</head>
+<body>
+	<div id="box" style="width:200px;height:200px;background:#f1f1f1;border:#ccc 1px solid" onclick="getStyle()"></div>
+</body>
+</html>

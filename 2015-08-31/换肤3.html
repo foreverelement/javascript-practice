@@ -4,15 +4,34 @@
 	<meta charset="UTF-8">
 	<title>换肤3</title>
 	<style type="text/css">
-	  	#div1{width:150px;height:200px;background:#399;}
+	 body div{width:200px;height:200px;margin:20px;border:#ccc 1px solid;}
+	 .skin1 div{background:#f1f1f1}
+	 .skin2 div{background:#f90}
+	 .skin3 div{background:#ff0000}
 	</style>
 	<script type="text/javascript">
-		window.onload = function(){
-			alert(div1.offsetWidth);
-		};
+		function skin1(){
+			var oBody = document.getElementById('body1');
+			oBody.className = 'skin1';
+		}
+		function skin2(){
+			var oBody = document.getElementById('body1');
+			oBody.className = 'skin2';
+		}
+		function skin3(){
+			var oBody = document.getElementById('body1');
+			oBody.className = 'skin3';
+		}
 	</script>
 </head>
-<body>
-	<div id="div1"></div>
+<body id="body1" class="skin1">
+	<input type="button" value="skin1" onclick="skin1()">
+	<input type="button" value="skin2" onclick="skin2()">
+	<input type="button" value="skin3" onclick="skin3()">
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
 </body>
 </html>
