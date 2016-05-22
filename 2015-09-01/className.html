@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>className</title>
+	<style type="text/css">
+	div{width:200px;height:200px;background:#f1f1f1;border:#ccc 1px solid;}
+	.big{width:400px;height:400px;background:#399}
+	</style>
+	<script type="text/javascript">
+		function toBig(){
+			var oDiv = document.getElementsByTagName('div')[0];
+			oDiv.className = 'big';
+		};
+	</script>
+</head>
+<body>
+	<div onclick="toBig()"></div>
+</body>
+</html>

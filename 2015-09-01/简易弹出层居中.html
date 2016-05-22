@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>简易弹出层居中</title>
+	<style type="text/css">
+		*{margin:0;padding:0;}
+		#login{width:200px;height:220px;background:#f1f1f1;border:#ccc 1px solid;position:absolute;top:50%;left:50%;margin:-110px 0 0 -100px;display:none}
+		#login strong{position:absolute;top:10px;right:10px;background:#399;color:#fff;height:20px;width:20px;line-height:20px;text-align:center;border-radius:10px;cursor:pointer}
+		#mask{position:fixed;width:100%;top:0;bottom:0;background:#000;opacity:0.3;filter:alpha(opacity:30);display:none}
+	</style>
+	<script type="text/javascript">
+		function toShow(){
+			var oLogin = document.getElementById('login');
+			var oMask = document.getElementById('mask');
+			oLogin.style.display = 'block';
+			oMask.style.display = 'block';
+		}
+		function toHide(){
+			var oLogin = document.getElementById('login');
+			var oMask = document.getElementById('mask');
+			oLogin.style.display = 'none';
+			oMask.style.display = 'none';
+		}
+	</script>
+</head>
+<body>
+	<input type="button" name="" value="button" onclick="toShow()">
+	<div id="mask"></div>
+	<div id="login">
+		<strong onclick="toHide()">X</strong>
+	</div>
+</body>
+</html>
