@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>提取行间2</title>
+	<style type="text/css">
+		#box{width:200px;height:200px;background:#f0f0f0;border:#ccc 1px solid;}
+	</style>
+	<script type="text/javascript">
+	function toBig(){
+		var oBox = document.getElementById('box');		
+		oBox.style.width = '400px';
+		oBox.style.height = '400px';
+		oBox.style.background = 'red';
+	}
+	function toSmall(){
+		var oBox = document.getElementById('box');
+		oBox.style.width = '200px';
+		oBox.style.height = '200px';
+		oBox.style.background = '#f0f0f0';
+	}
+	</script>
+</head>
+<body>
+	<div id="box" onmouseover="toBig()" onmouseout="toSmall()"></div>
+</body>
+</html>
