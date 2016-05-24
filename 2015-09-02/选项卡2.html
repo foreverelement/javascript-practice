@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> </title>
+	<style type="text/css">
+		input.on{background:#f60}
+		div{width:100px;height:100px;background:#f0f0f0;border:#ccc 1px solid;display:none}
+	</style>
+	<script type="text/javascript">
+		window.onload = function(){
+			var aBtn = document.getElementsByTagName('input');
+			var aDiv = document.getElementsByTagName('div');
+			for(var i=0;i<aBtn.length;i++){
+				aBtn[i].onclick = function(){
+					for(var i=0;i<aBtn.length;i++){
+						aBtn[i].className = '';
+						aDiv[i].style.display = 'none';
+					}
+					this.className = 'on';
+					alert(i); //有问题，执行时机的问题
+					aDiv[i].style.display = 'block';
+				};
+			}
+		};
+	</script>
+</head>
+<body>
+	<input type="button" name="" value="a" class="on">
+	<input type="button" name="" value="b">
+	<input type="button" name="" value="c">
+	<input type="button" name="" value="d">
+	<div style="display:block">1</div>
+	<div>2</div>
+	<div>3</div>
+	<div>4</div>
+</body>
+</html>

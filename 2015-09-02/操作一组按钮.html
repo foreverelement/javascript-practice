@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>操作一组按钮</title>
+	<style type="text/css">	
+	input.on{background:#399}
+	</style>
+	<script type="text/javascript">
+		window.onload = function(){
+			var aBtn = document.getElementsByTagName('input');
+			for(var i=0;i<aBtn.length;i++){
+				aBtn[i].onclick = function(){
+					this.className = 'on';
+				};
+			}
+		};
+	</script>
+</head>
+<body>
+	<input type="button" name="" value="a">
+	<input type="button" name="" value="b">
+	<input type="button" name="" value="c">
+</body>
+</html>

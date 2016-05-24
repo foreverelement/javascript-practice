@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>执行时机的问题</title>
+	<script type="text/javascript">
+		window.onload = function(){
+			var aBtn  = document.getElementsByTagName('input');
+			for(var i=0;i<aBtn.length;i++){
+				aBtn[i].onclick = function(){
+					alert(i);
+				};
+			}
+		};
+	</script>
+</head>
+<body>
+	<input type="button" name="" value="a">
+	<input type="button" name="" value="b">
+	<input type="button" name="" value="c">
+	<input type="button" name="" value="d">
+</body>
+</html>

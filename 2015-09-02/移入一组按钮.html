@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>移入一组按钮</title>
+	<script type="text/javascript">
+		window.onload = function(){
+			var aBtn = document.getElementsByTagName('input');
+			for(var i=0;i<aBtn.length;i++){
+				aBtn[i].onmouseover = function(){
+					this.style.background = 'red';
+				};
+			}
+		};
+	</script>
+</head>
+<body>
+	<input type="button" name="" value="a">
+	<input type="button" name="" value="b">
+	<input type="button" name="" value="c">
+	<input type="button" name="" value="d">
+</body>
+</html>
