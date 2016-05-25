@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">	
+	#box{width:200px;height:60px;line-height:60px;margin:100px auto;overflow:hidden;zoom:1;}
+	#box span{width:13px;height:13px;float:left;background:url(images/no1.gif);margin:0 10px;}
+	#box span.on{background:url(images/yes1.gif)}
+	</style>
+	<script type="text/javascript">
+		window.onload = function(){
+			var oBox = document.getElementById('box');
+			var aSpan = oBox.getElementsByTagName('span');
+			for(var i=0;i<aSpan.length;i++){
+				aSpan[i].onclick = function(){
+					if(this.className == 'on'){
+						this.className = '';
+					}else{
+						this.className = 'on';
+					}
+				};
+			}
+		};
+	</script>
+</head>
+<body>
+	<div id="box">
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+</body>
+</html>

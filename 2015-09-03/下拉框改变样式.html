@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>下拉框改变样式</title>
+	<style type="text/css">	
+	#box{width:100px;height:100px;background:#f0f0f0;border:#ccc 1px solid;}
+	</style>
+	<script type="text/javascript">
+		window.onload = function(){
+			var oS = document.getElementById('s1');
+			var oBox = document.getElementById('box');
+			var oBtn = document.getElementById('btn');
+			var oTxt = document.getElementById('txt');
+			oBtn.onclick = function(){
+				oBox.style[oS.value] = oTxt.value;
+			};
+		};
+	</script>
+</head>
+<body>
+	<div id="box"></div>
+	<select id="s1">
+		<option value="width">width</option>
+		<option value="height">height</option>
+		<option value="background">background</option>
+		<option value="display">display</option>
+	</select>
+	<input type="text" name="" id="txt">
+	<input type="button" name="" value="change" id="btn">
+</body>
+</html>

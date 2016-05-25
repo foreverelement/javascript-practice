@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>联动全选</title>
+	<script type="text/javascript">
+		window.onload = function(){
+			var oCh = document.getElementsByTagName('input')[0];
+			var oBox = document.getElementById('box');
+			var aCh = oBox.getElementsByTagName('input');
+			oCh.onclick = function(){
+				for(var i=0;i<aCh.length;i++){
+					this.checked?aCh[i].checked=true:aCh[i].checked=false;
+				}
+			};
+		};
+	</script>
+</head>
+<body>
+	<input type="checkbox" name="" id="ch1">
+	<hr>
+	<div id="box">
+		<input type="checkbox">
+		<input type="checkbox">
+		<input type="checkbox">
+		<input type="checkbox">
+		<input type="checkbox">
+	</div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<script type="text/javascript">
+	window.onload = function(){
+		var oBtn_checkAll = document.getElementsByTagName('input')[0];
+		var oBtn_unCheck = document.getElementsByTagName('input')[1];
+		var oBtn_invert = document.getElementsByTagName('input')[2];
+		var oBox = document.getElementById('box');
+		var aCh = oBox.getElementsByTagName('input');
+		//check all
+		oBtn_checkAll.onclick = function(){
+			for(var i=0;i<aCh.length;i++){
+				aCh[i].checked = true;
+			}
+		};
+		//unchecked
+		oBtn_unCheck.onclick = function(){
+			for(var i=0;i<aCh.length;i++){
+				aCh[i].checked = false;
+			}
+		};
+
+		//invert
+		oBtn_invert.onclick = function(){
+			for(var i=0;i<aCh.length;i++){
+				aCh[i].checked ? aCh[i].checked = false:aCh[i].checked = true;
+			}
+		};
+	};
+	</script>
+</head>
+<body>
+	<input type="button" name="" value="checkAll">
+	<input type="button" name="" value="unCheck">
+	<input type="button" name="" value="Invert">
+	<div id="box">
+		<input type="checkbox" name="" id="">
+		<input type="checkbox" name="" id="">
+		<input type="checkbox" name="" id="">
+		<input type="checkbox" name="" id="">
+		<input type="checkbox" name="" id="">
+	</div>	
+</body>
+</html>
