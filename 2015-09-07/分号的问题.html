@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>分号的问题</title>
+	<script type="text/javascript">
+		window.onload = function(){
+			var oBtn = document.getElementsByTagName('input')[0];
+
+			function show(){
+				alert(1);
+			}
+
+			oBtn.onclick = function(){
+				for(var i=0;i<1000;i++){
+					show();
+				}
+			};
+		};
+	</script>
+</head>
+<body>
+	<input type="button" name="" value="button">
+</body>
+</html>
