@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>调试</title>
+	<script type="text/javascript">
+		window.onload = function(){
+			alert(1);
+			var oBtn = document.getElementsByTagName('input')[0];
+			alert(2);
+			oBtn.onlick = function(){
+				alert(3);
+				alert(this.value);
+				alert(4);
+			};
+		};
+	</script>
+</head>
+<body>
+	<input type="button" name="" value="haha">
+</body>
+</html>
