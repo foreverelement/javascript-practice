@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>简易计算器</title>
+	<script type="text/javascript">
+		window.onload = function(){
+			var oTxt1 = document.getElementById('txt1');
+			var oTxt2 = document.getElementById('txt2');
+			var oBtn = document.getElementById('btn');
+			var result = 0;
+			oBtn.onclick = function(){
+				result = oTxt1.value+oTxt2.value;
+				alert(result);
+			};
+		};
+	</script>
+</head>
+<body>
+	<input type="text" name="" id="txt1">+<input type="text" name="" id="txt2">
+	<input type="button" name="" value="sum" id="btn">
+</body>
+</html>
